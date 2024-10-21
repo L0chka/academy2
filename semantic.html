@@ -5,31 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h3{
-            color:blueviolet;
-            background-color: brown;
+        .header{
+            display:flex;
+            border-bottom: 1px solid
+            black;
+            padding-bottom:10px ;
         }
-        p{
-            color: fuchsia;
+        .logo
+        {
+            margin-right: 50px;
+            text-decoration: none;
         }
-        a{
-            background-color: greenyellow;
+        ul{
+            display:flex;
+            list-style-type:none ;
+            padding-bottom:10px ;
+            padding-left: 0;
+            margin: 0;
+            
         }
-        h2{
-            color:gold;
-            background-color: bisque;
+        li{
+            margin-right: 10px;
         }
-        body{
-            background-color: red;
+        .box{
+            display: flex;
+            margin-bottom: 30px;
+            gap: 20px;
+            border-bottom: 1px solid 
+            #000;
+
+        }
+        .aside{
+            border-right: 1px solid #000;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            
+        }
+        .post{
+            padding-bottom:20px;
         }
     </style>
 </head>
 <body>
-<!--<nav> - тег блоков-->
-<header>
-    <nav class="header">
+<!--<div> - тег блоков-->
+<header class="header">
+    <nav>
         <a href="#" class="logo">LOGO</a>
-        <ul style="background-color: aqua;">    
+        <ul>    
             <li><a href="#">Home</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Blog</a></li>
@@ -37,10 +59,8 @@
         </ul>
     </nav>
 </header>
-
-    <aside>
-    <nav class="box">
-        <nav class="aside">
+<main class = "box">
+    <aside class="aside">
             <h3>Последний пост Telegram</h3>
             <p>
                 программисты скоро будут кодить на Ipad с веб-версией Visual studio code
@@ -48,48 +68,48 @@
             <p>если интересно, как это будет, то смотри видео-обзор на приложение, которое я протестировал с планшета и ноутбука</p>
             <a href="#">перейти на канал</a>
 
-        </nav>
+
     </aside>
     
     
-    <main>
+
         <section>
-        <nav>
+        <div>
             <h1 style="color: blue;">результаты поиска по слову верстка</h1>
-            <nav>
+            <div>
                 <h3>Верстка сайтов под ключ </h3>
                 <p>Мы создаем сайты за 1 месяц и дарим логотип в подарок <a href="#">Далее</a></p>
-            </nav>
+            </div>
         </section>
         <section>
-            <nav>
+            <div>
                 <h1>научитесь верстать сайты быстро!</h1>
                 <p>научим за 3 месяца <a href="#">Далее</a></p>
-            </nav>
+            </div>
         </section>
         <section>
-            <nav>
+            <div>
                 <h3>Отмечаем пять лет</h3>
                 <p>Наша Академия за эти 5 лет обучила верстке сайтов уже 1000 студентов<a href=""></a></p>
-            </nav>
+            </div>
         </section>
             <hr>
         <article>
             <h2>Полезная статья</h2>
-            <nav class="post">
+            <div class="post">
                 <span style="background-color: #ffffff;">Это статья будет посвещена довольно острой теме которая связана с позиционированием элементов мы поговорим о таком свойстве как: position и о его значение : relative abcolute и fixed. так же мы поговорим о таком значение static, но по больше степени нас будет интерисовать именно первая "троица "так как она чаще всего используется на сайтах<a href="#">Читать далее</a></span>
-            </nav>
+            </div>
         </article>
-        </nav>
-    </nav>
-</main>
+        </div>
+    
+    </main>
 
 <footer>
-    <nav>
+
         <p>&copy;
             Базовый курс информационные технологии
         </p>
-    </nav>
+    
 </footer>
 
 </body>
