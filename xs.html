@@ -23,6 +23,7 @@
             font-weight: 700;
         }
         ul {
+            padding-top: 5px;
             display: flex; /* флекс бокс */
             list-style-type: none; /*Это свойство, которое указывает вид маркера для элементов списка. Оно позволяет изменить или убрать маркеры HTML списка.*/
                                     /*Для маркированного списка:
@@ -44,7 +45,7 @@
             margin-right: 30px; /*это свойство, которое устанавливает внешний отступ справа элемента*/
         
         }
-        ul > li:not(:last-child){
+        li:not(:last-child){
             margin-right: 30px;
         }
         
@@ -52,11 +53,12 @@
             display: flex; /* флекс бокс */
             margin-bottom: 30px; /*устанавливает внешний отступ внизу*/
             gap: 20px; /*определяет размер промежутка между строками и столбцами в макете flexbox, grid или с несколькими столбцами*/
-            border-bottom: 1px solid #000; /*описывает нижнюю границу элемента*/
+            border-bottom: 1px solid; /*описывает нижнюю границу элемента*/
         }
         .aside {
-            border-right: 1px solid #000; /*описывает правую границу элемента*/
-            padding-right: 20px; /*устанавливает значение поля от правого края содержимого элемента*/
+            background-color: lavender;
+            border-right: 2px solid; /*описывает правую границу элемента*/
+            padding: 10px 20px; /*устанавливает значение поля от правого края содержимого элемента*/
         }
         .post {
             padding-bottom: 20px;/*устанавливает значение поля от нижнего края содержимого элемента*/
@@ -71,18 +73,19 @@
         h1 + section{
             background-color: moccasin;
         }
-        body{
-      font-family:"Roboto",sans-serif;
-    line-height:1.5em;
-    font-size:14px;
+    body{
+        font-family:"Roboto",sans-serif;
+        line-height:1.5;
+        font-size:14px;
     }
     header{
     font-size:20px;
 
     }
-    footer{
+    .footer{
     font-size:13px;
-
+    font-family: "Roboto",sans-serif;
+    padding: 0px 20px 0px 20px;
     }
     h1,h2,h3{
       text-transform:uppercase;
@@ -92,7 +95,7 @@
       section{
         background-color: lavender;
         padding: 5px 20px;
-        margin-bottom: 20px;
+        margin: 20px;
     }
 
     .logo
