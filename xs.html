@@ -37,9 +37,16 @@
             padding-left: 0; /*устанавливает значение поля от левого края содержимого элемента*/
             margin: 0; /*это свойство, которое задаёт размер внешнего отступа вокруг элемента*/
         }
+  
+    
         ul > li {
-            margin-right: 10px; /*это свойство, которое устанавливает внешний отступ справа элемента*/
+            margin-right: 30px; /*это свойство, которое устанавливает внешний отступ справа элемента*/
+        
         }
+        ul > li:not(:last-child){
+            margin-right: 30px;
+        }
+        
         .box {
             display: flex; /* флекс бокс */
             margin-bottom: 30px; /*устанавливает внешний отступ внизу*/
@@ -53,11 +60,99 @@
         .post {
             padding-bottom: 20px;/*устанавливает значение поля от нижнего края содержимого элемента*/
         }
+        section a.link{
+            background-color: rebeccapurple;
+            color: white;
+            padding: 8px 15px;
+
+
+        }
+        h1 + section{
+            background-color: moccasin;
+        }
+        body{
+      font-family:"Roboto",sans-serif;
+    line-height:1.5em;
+    font-size:14px;
+    }
+    header{
+    font-size:20px;
+
+    }
+    footer{
+    font-size:13px;
+
+    }
+    h1,h2,h3{
+      text-transform:uppercase;
+      line-height:0.01em;
+      font-weight: 700;
+      }
+      section{
+        background-color: lavender;
+        padding: 5px 20px;
+        margin-bottom: 20px;
+    }
+
+    .logo
+        {
+        margin-right:500px;/*Отступ справа*/
+        text-decoration:none;/*Удаляет под черкивание у ссылки*/
+        color:lightgreen;
+        background-color:rebeccapurple;
+        font-weight:700;
+
+        }
+
+        /*CSSстилидляоформлениястраницы*/
+
+        /*Оформлениезаголовкастраницы*/
+        .header{
+        display:flex;/*Используетсяфлексбоксдляоформлениязаголовка*/
+        border-bottom:1px solid black;/*Устанавливаетнижнююграницу*/
+        padding-bottom:10px;/*Устанавливаетотступснизу*/
+
+
+        }
+
+        /*Оформлениелоготипа*/
+    
+    
+    /*Оформлениеменю*/
+
+    /*Оформлениепунктовменю*/
+       li{
+    margin-right:10px;/*Отступсправа*/
+
+        }
+    
+    /*Оформлениеосновногоблокастраницы*/
+        .box{
+        display:flex;/*Используетсяфлексбоксдляоформленияблока*/
+        margin-bottom:30px;/*Отступснизу*/
+        gap:20px;/*Устанавливаетрасстояниемеждуэлементами*/
+      border-bottom:1px solid #000;/*Устанавливаетнижнююграницу*/
+      }
+    
+    /*Оформлениелевойчастиосновногоблока*/
+     .aside{
+    border-right:1px solid black;/*Устанавливает правую границу*/
+    padding-right:20px;/*Отступ справа*/
+    padding-bottom:20px;/*Отступ снизу*/
+    background-color: lavender;
+    
+         }
+    
+    /*Оформление правого блока основного блока*/
+    .post{
+    padding-bottom:20px;/*Отступснизу*/
+    }
+    
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="#" class="logo">LOGO</a>
+        <a href="#" class="logo" >LOGO</a>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Profile</a></li>
@@ -78,31 +173,31 @@
         </div>
         <div>
             <h1>Результаты поиска по слову "вёрстка"</h1>
-            <div>
+            <section>
                 <h3>Вёрстка сайтов под ключ</h3>
-                <p>Мы создаем сайты за 1 месяц и дарим логотип в подарок <a href="#">Далее</a></p>
-            </div>
-            <div>
+                <p>Мы создаем сайты за 1 месяц и дарим логотип в подарок <a href="#" class="link">Далее</a></p>
+            </section>
+            <section>
                 <h3>Научись верстать сайты быстро!</h3>
-                <p>Научим за 3 месяца. <a href="#">Далее</a></p>
-            </div>
-            <div>
+                <p>Научим за 3 месяца. <a href="#" class="link">Далее</a></p>
+            </section>
+            <section>
                 <h3>Отмечаем пять лет!</h3>
-                <p>Наша Академия за эти 5 лет обучила вёрстке уже 1000 студентов! <a href="#">Далее</a></p>
-            </div>
+                <p>Наша Академия за эти 5 лет обучила вёрстке уже 1000 студентов! <a href="#" class="link">Далее</a></p>
+            </section>
             <hr>
             <h2>Полезная статья:</h2>
             <div class="post">
                 <p>
                     Эта статья будет посвящена довольно «острой» теме, которая связана с позиционированием элементов. Мы поговорим о таком свойстве как position и его значениях: relative, absolute и fixed. Также мы поговорим о таком значении как static, но по большей степени нас будет интересовать именно первая «троица», так как она чаще всего используется на сайтах.
                 </p>
-                <a href="#">Читать далее</a>
+                <a href="#" class="link">Читать далее</a>
             </div>
         </div>
     </div>
     
-    <div>
+    <footer class="footer">
         <p>&copy; Базовый курс Информационные технологии</p>
-    </div>
+    </footer>
 </body>
 </html>
