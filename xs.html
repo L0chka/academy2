@@ -16,13 +16,19 @@
         }
         .logo {
             padding: 5px;
-            margin-right: 50px;
+            gap: 50px;
             text-decoration: none;
             color: lightgreen;
             background-color: rebeccapurple;
             font-weight: 700;
         }
         ul {
+            display:flex;
+
+            padding-bottom:10px ;
+
+
+            
             padding-top: 5px;
             display: flex; /* флекс бокс */
             list-style-type: none; /*Это свойство, которое указывает вид маркера для элементов списка. Оно позволяет изменить или убрать маркеры HTML списка.*/
@@ -47,8 +53,10 @@
         }
         li:not(:last-child){
             margin-right: 30px;
+            
         }
         
+
         .box {
             display: flex; /* флекс бокс */
             margin-bottom: 30px; /*устанавливает внешний отступ внизу*/
@@ -67,6 +75,8 @@
             background-color: rebeccapurple;
             color: white;
             padding: 8px 15px;
+            display: block;
+            text-align: center;
 
 
         }
@@ -124,12 +134,7 @@
     
     /*Оформлениеменю*/
 
-    /*Оформлениепунктовменю*/
-       li{
-    margin-right:10px;/*Отступсправа*/
-
-        }
-    
+  
     /*Оформлениеосновногоблокастраницы*/
         .box{
         display:flex;/*Используетсяфлексбоксдляоформленияблока*/
@@ -150,6 +155,14 @@
     /*Оформление правого блока основного блока*/
     .post{
     padding-bottom:20px;/*Отступснизу*/
+    }
+    a{
+        text-decoration: none;
+        
+    }
+    div.results{
+        gap: 10px;
+        grid-template-columns: repeat(3 1fx);
     }
     
     </style>
@@ -178,16 +191,22 @@
         <div>
             <h1>Результаты поиска по слову "вёрстка"</h1>
             <section>
-                <h3>Вёрстка сайтов под ключ</h3>
-                <p>Мы создаем сайты за 1 месяц и дарим логотип в подарок <a href="#" class="link">Далее</a></p>
+                <div class="results">
+                    <h3>Вёрстка сайтов под ключ</h3>
+                    <p>Мы создаем сайты за 1 месяц и дарим логотип в подарок <a href="#" class="link">Далее</a></p>
+                </div>
             </section>
             <section>
-                <h3>Научись верстать сайты быстро!</h3>
-                <p>Научим за 3 месяца. <a href="#" class="link">Далее</a></p>
+                <div class="results">
+                    <h3>Научись верстать сайты быстро!</h3>
+                    <p>Научим за 3 месяца. <a href="#" class="link">Далее</a></p>
+                </div>
             </section>
             <section>
-                <h3>Отмечаем пять лет!</h3>
-                <p>Наша Академия за эти 5 лет обучила вёрстке уже 1000 студентов! <a href="#" class="link">Далее</a></p>
+                <div class="results"><h3>Отмечаем пять лет!</h3>
+                    <p>Наша Академия за эти 5 лет обучила вёрстке уже 1000 студентов! <a href="#" class="link">Далее</a></p>
+                </div>
+                
             </section>
             <hr>
             <h2>Полезная статья:</h2>
