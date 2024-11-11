@@ -1,0 +1,48 @@
+
+:root{
+    --OS: "open Sans", serif;
+    --NS: "nunito Sans" serif;
+    --accent-light: #FBB731;
+    --dark: #443737;
+    --light: #FFF;
+    --accent-dark: #F37335;
+    
+}
+body{
+    font-family: var(--OS);
+}
+.container{
+    max-width: 1180px;
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+.header{
+    display: flex;
+    gap: 196px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    align-content: space-between;
+
+}
+.logo{
+    background-image: url(/img/Слой_x0020_1.svg);
+    height: 56px;
+    width: 176px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+nav{
+    gap: 46px;
+    display: flex;
+    flex-grow: 1;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--dark);
+    font-family: var(--OS);
+    font-size: 20px;
+    font-weight: 600;
+}
