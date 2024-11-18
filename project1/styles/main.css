@@ -86,6 +86,7 @@ nav{
     padding-bottom: 142px;
     padding-top: 142px;
     text-align: center;
+    background-position: center center;
 
 }
 .hero-title{
@@ -93,8 +94,11 @@ nav{
     font-family: var(--NS);
     font-size: 80px;
     font-weight: 700;
+    margin: 8px 0 0 11px;
+
 }
 .hero-description{
+
     font-size: 15px;
     font-family: var(--OS);
     color: var(--WL);
@@ -111,7 +115,66 @@ nav{
     font-size: 15px;
     gap: 16px;
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 8px;
     margin-top: 0;
+
+}
+.breadcrumbs-link:hover{
+    font-family: var(--WL);
+}
+.breadcrumbs-link{
+    font-family: var(--WL);
+    text-decoration: none;
+
+}
+.breadcrumbs-item:not(:last-child)::after{
+content: "/";
+position: absolute;
+right: -10px;
+}
+/* верстка баннер */
+.banner{
+    margin-top: 140px;
+}
+.banner-wrapper{
+    background-image: url(../img/Frame.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-title {
+    color: var(--light);
+    font-size: 60px;
+    font-family: var(--NS);
+    font-weight: 900;
+    margin-bottom: 10px;
+
+}
+.banner-title span{
+    display: block;
+    font-family: var(--OS);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--dark);
+    background-color: var(--accent-dark);
+    min-width: 94px;
+    border-radius: 14px;
+    text-align: center;
+    margin-bottom: 4px;
+    padding: 6px 0 ;
+}
+.banner-description{
+    font-family: var(--OS);
+    color: rgba(var(--WL), .8);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 350px;
+    line-height: 160%;
+}
+.banner-btn{
+    font-family: var(--NS);
+    background-color: var(--accent-light);
+    border:none;
 
 }
