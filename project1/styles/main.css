@@ -135,11 +135,15 @@ right: -10px;
 /* верстка баннер */
 .banner{
     margin-top: 140px;
+    
+    
 }
 .banner-wrapper{
     background-image: url(../img/Frame.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 100px 100px ;
+    
 }
 
 .banner-title {
@@ -157,7 +161,7 @@ right: -10px;
     font-size: 14px;
     color: var(--dark);
     background-color: var(--accent-dark);
-    min-width: 94px;
+    max-width: 94px;
     border-radius: 14px;
     text-align: center;
     margin-bottom: 4px;
@@ -171,10 +175,60 @@ right: -10px;
     font-weight: 400;
     max-width: 350px;
     line-height: 160%;
+    margin-bottom: 15px;
+
 }
 .banner-btn{
     font-family: var(--NS);
     background-color: var(--accent-light);
     border:none;
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px ;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+}
+.banner-btn:hover{
+    background-color: var(--accent-dark);
+}
+.catalog-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0 34px 0;
+}
+.catalog-btn::before{
+    height: 18px;
+    background-image: url(/img/shopping-cart.svg);
+}
+.catalog-title{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.catalog-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 20px;
+    grid-template-rows: auto;
+}
+.image{
+    height: 100%;
+    width: 100%;
+    position: absolute;
 
+}
+.catalog-item{
+    font-family: var(--NS);
+    text-align: center;
+}
+.catalog-title{
+    color: var(--dark);
+    font-family: var(--NS);
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 126%;
+    
 }
